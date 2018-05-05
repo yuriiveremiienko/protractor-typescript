@@ -1,0 +1,21 @@
+{
+  "name": "protractor-typescript",
+  "version": "0.0.1",
+  "dependencies": {
+    "@types/jasmine": "^2.8.2",
+    "@types/moment": "^2.13.0",
+    "@types/protractor": "^4.0.0",
+    "jasmine": "^2.8.0",
+    "moment": "^2.20.1",
+    "protractor": "^5.2.2",
+    "ts-node": "^6.0.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "pre-test": "./node_modules/protractor/bin/webdriver-manager update",
+    "runTests": "./node_modules/protractor/bin/protractor ./dist/config/conf.js",
+    "test": "npm run tsc && npm run pre-test && npm run runTests"
+  }
+}
